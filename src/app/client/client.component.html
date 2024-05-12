@@ -1,0 +1,30 @@
+
+<div class="card">
+  <div class="card-head">Fiches de suivi des Clients</div>
+  <div class="card-body">
+ 
+<div class="container">
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Poids</th>
+          <th>Mesures (Poitrine/Taille)</th>
+          <th>Heures de sommeil</th>
+          <th>Niveau de stress</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td>{{ client.name }}</td>
+          <td>{{ client.weight }} kg</td>
+         <td>Poitrine: {{ client.measurements['chest'] }} cm, Taille: {{ client.measurements['waist'] }} cm</td>
+          <td>{{ client.sleepHours }}</td>
+          <td>{{ client.stressLevel }}/10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>

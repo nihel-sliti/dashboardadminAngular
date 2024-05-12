@@ -1,0 +1,63 @@
+.update-form {
+    max-width: 800px; /* Increased the maximum width */
+    margin: 20px auto;
+    padding: 30px; /* Increased padding for a larger feel */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added shadow for better depth */
+}
+
+.update-form header.form-header {
+    margin-bottom: 20px;
+}
+
+.update-form h5 {
+    margin: 0;
+    color: #333;
+}
+
+.update-form .form-body {
+    margin-bottom: 20px;
+}
+
+.update-form .form-group {
+    margin-bottom: 10px;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.update-form input[type="text"],
+.update-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.update-form input[type="text"]:focus,
+.update-form input[type="email"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.update-form footer.form-footer {
+    text-align: right;
+}
+
+.update-form button {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-form button:hover {
+    background-color: #0056b3;
+}

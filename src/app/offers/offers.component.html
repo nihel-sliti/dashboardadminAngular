@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-head">Offres disponibles</div>
+  <div class="card-body">
+
+<div style="display: flex; align-items: center;margin-right: 10px;">
+  <h5 style="margin-right: 5px;"><a routerLink="/addoffers">Add Offers </a></h5>
+  <i class="offer-add fal fa-plus" style="font-size: 1.25rem; "></i>
+</div> 
+<div class="container my-progress">
+    <div class="offer-section">
+      <div class="pricing-table">
+        <div class="pricing-option" *ngFor="let offer of offers">
+          <h2 class="tilte">{{ offer.nomOffers}}</h2>
+          <h3 class="price">{{ offer.price}}</h3>
+          <ul class="list" >
+            <li>  </li>
+            <li>{{offer.calculateurD}} <i [class]="offer.icon" ></i> </li> 
+            <li>{{offer.calculateurP}} <i [class]="offer.iconP"></i> </li> 
+            <li>{{offer.ficheP}} <i  [class]="offer.iconFP"></i> </li> 
+            <li>{{offer.book}} <i [class]="offer.iconB"></i> </li> 
+            <li>{{offer.carnetE}} <i [class]="offer.iconC"></i> </li> 
+          </ul>
+          <button type="button" class="btn btn-success" (click)="editOffers(offer.id)">Edit</button>
+          <button type="button" class="btn btn-danger" (click)="deleteOffers(offer.id)">Delet</button>
+        </div>
+
+       
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

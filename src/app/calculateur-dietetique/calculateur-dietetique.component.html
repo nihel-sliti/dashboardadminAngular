@@ -1,0 +1,74 @@
+
+<h2>CalculateurDietetique</h2>
+<div class="card">
+    <div class="card-head">Ms Jomaa</div>
+    <div class="card-body">
+<div class="container">
+    <div class="left-panel">
+   
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Date d'enregistrement</th>
+                <th>Âge</th>
+                <th>Poids (kgs)</th>
+                <th>Objectif</th>
+                <th>Calories Consommées</th>
+                <th>Taille (cm)</th>
+                <th>Niveau d'Activité</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25-04-2024</td>
+                    <td>35</td>
+                    <td>80</td>
+                    <td>Perte de poids</td>
+                    <td>2455</td>
+                    <td>180</td>
+                    <td>Moderée</td>
+                  </tr>   
+                   <tr>
+                    <td>25-04-2024</td>
+                    <td>35</td>
+                    <td>80</td>
+                    <td>Perte de poids</td>
+                    <td>2455</td>
+                    <td>180</td>
+                    <td>Moderée</td>
+                  </tr>    
+                  <tr>
+                    <td>25-04-2024</td>
+                    <td>35</td>
+                    <td>80</td>
+                    <td>Perte de poids</td>
+                    <td>2455</td>
+                    <td>180</td>
+                    <td>Moderée</td>
+                  </tr>
+              <tr>
+                <td>26-04-2024</td>
+                <td>29</td>
+                <td>65</td>
+                <td>Maintien</td>
+                <td>2345</td>
+                <td>165</td>
+                <td>Élevée</td>
+              </tr>
+              <!-- Ajoutez plus de lignes ici selon les données disponibles -->
+            </tbody>
+          </table>
+    </div>
+    <div class="right-panel">
+        <div class="pie" [chart]="pieChart">
+  
+        </div>
+    </div>
+    
+  </div>
+  <div class="charts">
+    <div class="line" [chart]="lineChart"></div>
+  </div>
+  
+</div>
+</div>

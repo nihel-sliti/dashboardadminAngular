@@ -1,0 +1,36 @@
+.cardP {
+  transition: transform .2s; /* Animation for hover effect */
+  margin-bottom: 20px; /* Space between cards */
+  width: 200px;
+}
+
+.card-img-top {
+  width: 50%; /* Ensure images cover the card width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limiting image height */
+  object-fit: cover; /* Ensure the image covers the space without stretching */
+
+}
+
+.card:hover {
+  transform: scale(1.03); /* Slight scale on hover to draw attention */
+}
+
+.card-body {
+  padding: 5px; /* Padding inside card */
+}
+
+.btn-group {
+  margin-top: 10px; /* Space above buttons */
+}
+
+.product-add {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

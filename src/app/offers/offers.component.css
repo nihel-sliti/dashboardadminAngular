@@ -1,0 +1,149 @@
+.my-progress {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-top: 6px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 6px;
+  }
+ 
+  th, td {
+    text-align: center;
+    padding: 3px;
+    height:auto;
+  }
+h1{
+  color: #495057;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 600px) {
+  /* Réduire la taille des cellules et ajuster le padding */
+  th, td {
+      padding: 6px;
+  }
+
+  /* Masquer l'en-tête de la colonne */
+  th {
+      display: none;
+  }
+
+  /* Afficher les cellules avec leur titre */
+  td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      text-align: left;
+  }
+}
+  /*offer section*/
+.offer-section {
+   background-color: #fff;
+   background-size: cover;
+  background-position: center;
+  color: #333;
+  text-align: center;
+ 
+  }
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.pricing-option {
+  flex: 1;
+  margin: 10px;
+  background-color:#F8F8F8; /* Orange background */
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+ 
+}
+
+.pricing-option .header {
+  background: #FF8C00; /* Darker orange */
+  padding: 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pricing-option .title {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  
+}
+
+.pricing-option .price {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.pricing-option .list {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-option .list li {
+  padding: 8px 8px;
+  border-bottom: 1px solid grey;
+  font-size: 16px; 
+  text-align: left;
+}
+
+.pricing-option .btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  
+}
+.offer-link-icon-valid {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.offer-link-icon-no-valid {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.offer-add {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+  }
+}

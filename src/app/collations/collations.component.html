@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-head">Recettes disponibles</div>
+    <div class="card-body">
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Recette</th>
+                <th>Description</th>
+                <th>Ingrédients</th>
+                <th>Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let recipe of collationRecipes">
+                <td>{{recipe.name}}</td>
+                <td>{{recipe.description}}</td>
+                <td>{{recipe.ingredients}}</td>
+                <td>{{recipe.calories}}</td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>
+
+    </div>
+</div>

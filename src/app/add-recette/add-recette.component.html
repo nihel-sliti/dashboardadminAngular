@@ -1,0 +1,42 @@
+
+<h2>Add Recipe</h2>
+<div class="card">
+    <div class="card-head">Recipe</div>
+    <div class="card-body">
+<div class="container">
+    <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="period">Période de la recette</label>
+        <select formControlName="period" id="period" class="form-control">
+          <option value="">Choisir...</option>
+          <option value="Petit-dejeuner">Petit-dejeuner</option>
+          <option value="Dejeuner">Déjeuner</option>
+          <option value="Diner">Dîner</option>
+          <option value="Collation">Collation</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="name">Nom de la recette</label>
+        <input type="text" formControlName="name" id="name" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea formControlName="description" id="description" class="form-control"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="ingredients">Ingrédients</label>
+        <input type="text" formControlName="ingredients" id="ingredients" class="form-control">
+      </div>
+  
+      <div class="form-group">
+        <label for="calories">Calories</label>
+        <input type="text" formControlName="calories" id="calories" class="form-control">
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="!recipeForm.valid">Ajouter la recette</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 6px;
+  }
+ 
+  th, td {
+    text-align: center;
+    padding: 3px;
+    height:auto;
+  }
+h1{
+  color: #495057;
+}
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 600px) {
+  /* Réduire la taille des cellules et ajuster le padding */
+  th, td {
+      padding: 6px;
+  }
+
+  /* Masquer l'en-tête de la colonne */
+  th {
+      display: none;
+  }
+
+  /* Afficher les cellules avec leur titre */
+  td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      text-align: left;
+  }
+}

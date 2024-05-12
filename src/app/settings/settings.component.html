@@ -1,0 +1,31 @@
+<div class="container" id="main-container">
+    <div class="card">
+      <div class="card-head">Settings</div>
+      <div class="card-body">
+      
+        <div class="chat-list">
+            <div >
+              <h5>nihel</h5>
+              <p>hello there</p>
+            </div>
+          </div>
+     
+      
+
+        <div class="chat-container">
+          
+            <div class="messages">
+              <div *ngFor="let message of messages" class="message" [ngClass]="{'mine': message.mine}">
+                <div class="message-content">{{ message.content }}</div>
+              </div>
+            </div>
+            <div class="input-group">
+              <input type="text" [(ngModel)]="newMessage" class="form-control" placeholder="Type a message..." (keyup.enter)="sendMessage()">
+              <button class="btn btn-primary" (click)="sendMessage()">Send</button>
+            </div>
+          </div>
+      
+    
+      </div>
+    </div>
+        

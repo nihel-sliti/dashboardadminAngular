@@ -1,0 +1,41 @@
+
+<div class="card">
+    <div class="card-head">Dashboard</div>
+    <div class="card-body">
+        <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Code</th>
+                  <th>Mode</th>
+                  <th>Amount</th>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let payment of payments">
+                  <td>{{ payment.id }}</td>
+                  <td>{{ payment.code }}</td>
+                  <td>{{ payment.paymentMode }}</td>
+                  <td>{{ payment.amount }}</td>
+                  <td>Description here</td>
+                  <td>{{ payment.date }}</td>
+                  <td>{{ payment.status }}</td><td>
+                    <button type="button" class="btn btn-success" (click)="validatePayment(payment.id)">Validate</button>
+                    <button   type="button" class="btn btn-danger" (click)="refusePayment(payment.id)">Refuse</button>
+                  </td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          
+    </div>
+
+</div>
+
