@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 interface SideNAvToggle{
   screenWidth: number;
   collapsed: boolean;
@@ -10,7 +11,12 @@ interface SideNAvToggle{
 })
 export class AppComponent {
   title = 'dashAdmin';
+  constructor(private router: Router) {}
 
+  get isAuthRoute() {
+    // Vérifie si la route actuelle est celle de l'authentification
+    return this.router.url.includes('/auth')|| this.router.url.includes('/signup');
+  }
 isSideNavCollapsed= false;
 screenWidth= 0;
 

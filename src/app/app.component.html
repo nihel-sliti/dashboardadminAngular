@@ -1,5 +1,5 @@
-<app-sidenav (onToggleSideNAv)="onToggleSideNAv($event)"></app-sidenav>
-<app-header
+<app-sidenav *ngIf="!isAuthRoute" (onToggleSideNAv)="onToggleSideNAv($event)"></app-sidenav>
+<app-header *ngIf="!isAuthRoute"
 [collapsed]="isSideNavCollapsed"
 [screenWidth]="screenWidth">
 </app-header>

@@ -1,0 +1,37 @@
+<nav class="navbar">
+    <div class="logo">Coachiny</div>
+    <div class="nav-links">
+      <a href="/">home</a>
+      <a href="/instructor">instructor</a>
+      <a href="/classes">classes</a>
+      <a href="/offers">Offres</a>
+      <a href="/about">à propos</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="login-buttonn">
+      <a href="/signup">Sign up</a>
+    </div>
+  </nav>
+  
+<div class="login-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Welcome</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="e.g. michelle@morph-ui.design">
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Enter your password">
+          </mat-form-field>
+          <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+          <button mat-raised-button class="login-button full-width" routerLink="/dashboard">Sign in</button>
+          <a mat-button class="mat-typography login-link"routerLink="/signup">Don't have an account? Sign up</a>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>

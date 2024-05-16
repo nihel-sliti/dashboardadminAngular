@@ -22,11 +22,8 @@ export const userItems = [
         icon: 'far fa-cog',
         Label: 'Settings'
      },
-    {    route: '/profile',
-        icon: 'far fa-unlock-alt', 
-        Label: 'Lock screen'
-    },
-    {    route: '/settings',
+  
+    {    route: '/auth',
         icon: 'far fa-power-off', 
         Label: 'Logout'
     }, 

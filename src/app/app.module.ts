@@ -42,7 +42,10 @@ import { DejeunerComponent } from './dejeuner/dejeuner.component';
 import { DinerComponent } from './diner/diner.component';
 import { CollationsComponent } from './collations/collations.component';
 import { AddRecetteComponent } from './add-recette/add-recette.component';
-
+import { AuthComponent } from './auth/auth.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +74,9 @@ import { AddRecetteComponent } from './add-recette/add-recette.component';
    DejeunerComponent,
    DinerComponent,
    CollationsComponent,
-   AddRecetteComponent
+   AddRecetteComponent,
+   AuthComponent,
+   SignupComponent
   
   ],
   imports: [
@@ -88,9 +93,9 @@ import { AddRecetteComponent } from './add-recette/add-recette.component';
     CommonModule,
     ReactiveFormsModule,
     BaseChartDirective ,
-    ChartModule // add ChartModule to your imports
-  
-  
+    ChartModule, // add ChartModule to your imports
+    MatCardModule,  // Assurez-vous d'ajouter cette ligne ici
+    MatCheckboxModule  // Ajoutez le MatCheckboxModule ici
    
   ],
   providers: [

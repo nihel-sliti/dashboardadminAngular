@@ -1,0 +1,16 @@
+/* app.component.css */
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  app-sidenav,
+  app-header {
+    flex-shrink: 0; /* Empêche le sidenav et le header de prendre de l'espace s'ils ne sont pas affichés */
+  }
+  
+  app-body {
+    flex-grow: 1; /* Permet au corps de l'application de prendre tout l'espace disponible */
+  }
+  

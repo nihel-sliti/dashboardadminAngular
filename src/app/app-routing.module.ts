@@ -20,9 +20,11 @@ import { DejeunerComponent } from './dejeuner/dejeuner.component';
 import { DinerComponent } from './diner/diner.component';
 import { CollationsComponent } from './collations/collations.component';
 import { AddRecetteComponent } from './add-recette/add-recette.component';
+import { AuthComponent } from './auth/auth.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'dashboard', pathMatch:'full'},
+  {path:'', redirectTo:'auth', pathMatch:'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'products', component: ProductsComponent}, 
   {path: 'statistics', component: StatisticsComponent},
@@ -42,8 +44,9 @@ const routes: Routes = [
   {path: "dejeuner", component: DejeunerComponent},
   {path: "diner", component: DinerComponent},
   {path: "collations", component: CollationsComponent},
-  {path: "addRecette", component: AddRecetteComponent}
-
+  {path: "addRecette", component: AddRecetteComponent},
+  {path: "auth",component:AuthComponent},
+  {path: "signup", component: SignupComponent},
 ];
 
 @NgModule({
